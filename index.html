@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dice game</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="wrapper-inner-box">
+        <div class="wrapper-inner wrapper-inner-left"></div>
+        <div class="wrapper-inner wrapper-inner-right"></div>
+      </div>
+      <div id="wrapper-dice-game">
+        <header>
+          <div class="player-box">
+            <p>player1</p>
+          </div>
+          <div class="player-box">
+            <p>player2</p>
+          </div>
+        </header>
+        <main>
+          <div class="dice-box">
+            <div class="dice-box-inner dice-box-left">
+              <img id="dice-img" src="img/dice1.png" alt="" />
+            </div>
+            <div class="dice-box-inner dice-box-right">
+              <img id="dice-img" src="img/dice1.png" alt="" />
+            </div>
+          </div>
+        </main>
+        <footer>
+          <div class="current-value value-left">
+            <p>value</p>
+            <div class="current-value-left">00</div>
+          </div>
+          <div class="current-value value-right">
+            <p>value</p>
+            <div class="current-value-right">00</div>
+          </div>
+        </footer>
+      </div>
+      <button id="hold-btn">hold</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
