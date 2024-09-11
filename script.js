@@ -47,16 +47,16 @@ function getDiceValueFromSrc(src) {
 function updateDiceImage() {
   if (turn % 2 === 1) {
     // 홀수 턴: 왼쪽 주사위
-    diceImgLeft.style.display = "block";
+    diceImgLeft.style.opacity = "1";
     currentDiceValue = getRandomDiceValue(); // 랜덤 주사위 값 생성
     diceImgLeft.src = getDiceImageSrc(currentDiceValue); // 왼쪽 주사위 이미지 업데이트
-    diceImgRight.style.display = "none"; // 오른쪽 주사위 이미지는 숨김
+    diceImgRight.style.opacity = "0"; // 오른쪽 주사위 이미지는 숨김
   } else {
     // 짝수 턴: 오른쪽 주사위
-    diceImgLeft.style.display = "none"; // 왼쪽 주사위 이미지는 숨김
+    diceImgRight.style.opacity = "1";
     currentDiceValue = getRandomDiceValue(); // 랜덤 주사위 값 생성
-    diceImgRight.style.display = "block";
     diceImgRight.src = getDiceImageSrc(currentDiceValue); // 오른쪽 주사위 이미지 업데이트
+    diceImgLeft.style.opacity = "0"; // 왼쪽 주사위 이미지는 숨김
   }
 }
 
